@@ -4,6 +4,14 @@
 
 ## 用法
 
+1. clone 本项目
+
+2. 安装依赖
+```bash
+npm install
+```
+3. 修改配置
+
 index.js 中修改配置
 
 ```js
@@ -13,13 +21,15 @@ index.js 中修改配置
 
 input.md 为你的语雀 Markdown 文件
 
-output.md 为转换后的文件
 
 ## 运行
 
 ```bash
 node index.js
 ```
+
+## 输出
+output.md 为转换后的 Markdown 文件
 
 ## 注意事项
 - 网络需要畅通访问 GitHub API
