@@ -73,7 +73,7 @@ async function uploadYuqueImageToGithub(yuqueImageUrl, token, repo) {
 }
 
 async function processMarkdown({ markdownContent,token,repo}) {
-  const yuqueImageRegex = /https:\/\/cdn\.nlark\.com\/yuque\/.*?\.png/g;
+  const yuqueImageRegex = /https:\/\/cdn\.nlark\.com\/yuque\/.*?\.(png|jpg|jpeg|gif|webp)/gi;
   
   const yuqueUrls = Array.from(markdownContent.matchAll(yuqueImageRegex)).map(match => match[0]);
   
